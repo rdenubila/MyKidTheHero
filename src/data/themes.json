@@ -2,13 +2,13 @@
     {
         "theme": "Medieval",
         "prompt": [
-            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que vive em uma caverna escura defendendo um tesouro. Os protagonistas da história deverão derrotar o inimigo para poder resgatar o tesouro e salvar seu vilarejo de um rei que vive roubando os moradores. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que vive em uma caverna escura defendendo um tesouro. Os protagonistas da história deverão derrotar o inimigo para poder resgatar o tesouro e salvar seu vilarejo de um rei que vive roubando os moradores.",
 
-            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que está atacando o castelo. Os protagonistas da história são cavaleiros esnobados pelos outros, mas que no final são eles que salvam o castelo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que está atacando o castelo. Os protagonistas da história são cavaleiros esnobados pelos outros, mas que no final são eles que salvam o castelo.",
 
-            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que está atacando o reino. Os protagonistas da história deverão tentar derrotar o inimigo, mas na verdade descobrem que o inimigo é na verdade bonzinho, e que estava apenas se defendendo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre um {{enemy}} que está atacando o reino. Os protagonistas da história deverão tentar derrotar o inimigo, mas na verdade descobrem que o inimigo é na verdade bonzinho, e que estava apenas se defendendo.",
 
-            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre uma princesa que foi sequestrada por um {{enemy}}. Os protagonistas da história deverão tentar derrotar o inimigo e resgatar a princesa. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante que se passa em um ambiente medieval sobre uma princesa que foi sequestrada por um {{enemy}}. Os protagonistas da história deverão tentar derrotar o inimigo e resgatar a princesa."
         ],
         "parameters": [
             {
@@ -20,17 +20,17 @@
     {
         "theme": "Velho Oeste",
         "prompt": [
-            "Escreva um história infantil emocionante no velho oeste, onde os protagonistas da história são enganados por um {{enemy}} que o convidou para ir a um luger muito legal, mas na verdade queria distaí-los para roubar sua fazenda. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante no velho oeste, onde os protagonistas da história são enganados por um {{enemy}} que o convidou para ir a um luger muito legal, mas na verdade queria distaí-los para roubar sua fazenda.",
 
-            "Escreva um história infantil emocionante que se passa no velho oeste sobre um {{enemy}} que está roubando o banco. O inimigo é procurado em várias cidades e possui uma recompensa sobre ele. Os protagonistas deverão capturar o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa no velho oeste sobre um {{enemy}} que está roubando o banco. O inimigo é procurado em várias cidades e possui uma recompensa sobre ele. Os protagonistas deverão capturar o inimigo.",
 
-            "Escreva um história infantil emocionante que se passa no velho oeste sobre um {{enemy}} que chega a cidade. O inimigo finge ser uma boa pessoa e enganam os personagens da história, mas que aos poucos descobrem que ele é mau e ajudam o xerife a capturá-lo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa no velho oeste sobre um {{enemy}} que chega a cidade. O inimigo finge ser uma boa pessoa e enganam os personagens da história, mas que aos poucos descobrem que ele é mau e ajudam o xerife a capturá-lo.",
 
-            "Escreva um história infantil emocionante que se passa no velho oeste sobre o protagonista que sonha em ser xerife mas é muito jovem para ser levado a sério. Quando uma gangue de bandidos ameaça a cidade, o meninoo protagonista assume a liderança e usa sua inteligência e coragem para salvar o dia. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa no velho oeste sobre o protagonista que sonha em ser xerife mas é muito jovem para ser levado a sério. Quando uma gangue de bandidos ameaça a cidade, o meninoo protagonista assume a liderança e usa sua inteligência e coragem para salvar o dia.",
 
-            "Escreva um história infantil emocionante que se passa no velho oeste e a busca por um grande tesouro perdido onde os personagens da história deverão enfrentar vários desafios, incluindo encontrar pistas escondidas e escapar de bandidos. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante que se passa no velho oeste e a busca por um grande tesouro perdido onde os personagens da história deverão enfrentar vários desafios, incluindo encontrar pistas escondidas e escapar de bandidos.",
 
-            "Escreva um história infantil emocionante que se passa no velho oeste e o roubo de um trem que passava perto da cidade. O protagonista da história é o xerife e deverá enfrentar os bandidos e impedir o trem de ser roubado. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante que se passa no velho oeste e o roubo de um trem que passava perto da cidade. O protagonista da história é o xerife e deverá enfrentar os bandidos e impedir o trem de ser roubado."
         ],
         "parameters": [
             {
@@ -42,13 +42,13 @@
     {
         "theme": "Ninjas",
         "prompt": [
-            "Escreva um história infantil emocionante onde o protagonista da história é um ninja que acabou de se tornar ninja, e precisa enfrentar o maior desafio da sua jornada, um {{enemy}}, o protagonista deverá usar suas habilidades e inteligência para derrotar o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante onde o protagonista da história é um ninja que acabou de se tornar ninja, e precisa enfrentar o maior desafio da sua jornada, um {{enemy}}, o protagonista deverá usar suas habilidades e inteligência para derrotar o inimigo.",
 
-            "Escreva um história infantil emocionante sobre ninjas. O protagonista é um ninja que recebe a importante missão de {{mission}}. O desafio final será derrotar o {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante sobre ninjas. O protagonista é um ninja que recebe a importante missão de {{mission}}. O desafio final será derrotar o {{enemy}}.",
 
-            "Escreva um história infantil emocionante sobre um grupo de ninjas, do qual o protagonista faz parte, que deverá enfrentar vários desafios e testes para provar que são dignos o suficiente e no fim derrotar o grande {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante sobre um grupo de ninjas, do qual o protagonista faz parte, que deverá enfrentar vários desafios e testes para provar que são dignos o suficiente e no fim derrotar o grande {{enemy}}.",
 
-            "Escreva um história infantil emocionante onde o protagonista da história é um ninja. Um {{enemy}} desconhecido ofece ao protagonista um chá que promete deixá-lo mais forte, porém o chá na verdade o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante onde o protagonista da história é um ninja. Um {{enemy}} desconhecido ofece ao protagonista um chá que promete deixá-lo mais forte, porém o chá na verdade o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo."
         ],
         "parameters": [
             {
@@ -64,11 +64,11 @@
     {
         "theme": "Heróis",
         "prompt": [
-            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói deverá usar sua inteligência e seus superpoderes para salvar sua cidade que está sendo atacada por um {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói deverá usar sua inteligência e seus superpoderes para salvar sua cidade que está sendo atacada por um {{enemy}}.",
 
-            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói é capturado por um {{enemy}} e deverá usar sua inteligência e seus super poderes para se livrar do perigo e salvar o mundo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói é capturado por um {{enemy}} e deverá usar sua inteligência e seus super poderes para se livrar do perigo e salvar o mundo.",
 
-            "Escreva um história infantil emocionante onde o protagonista é um super-herói. Um {{enemy}} desconhecido ofece ao protagonista uma poção que promete deixá-lo mais forte, porém a poção na verdade é um veneno que o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante onde o protagonista é um super-herói. Um {{enemy}} desconhecido ofece ao protagonista uma poção que promete deixá-lo mais forte, porém a poção na verdade é um veneno que o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo."
         ],
         "parameters": [
             {
