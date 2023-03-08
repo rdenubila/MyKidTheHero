@@ -24,9 +24,14 @@ export default class OpenAIService {
             currentPrompt = currentPrompt?.replaceAll(`{{${param.key}}}`, _.sample(param.values) || param.key);
         })
 
-        currentPrompt = currentPrompt + ` O protagonista é ${protagonists.join(", ")}`;
-        if (coadjuvants.length > 0)
-            currentPrompt = currentPrompt + ` e os coadjuvantes são ${coadjuvants.join(", ")}`;
+        if (protagonists.length > 0)
+            currentPrompt = currentPrompt + ` O protagonista é ${protagonists.join(", ")}.`;
+
+        if (protagonists.length > 0 && coadjuvants.length > 0)
+            currentPrompt = currentPrompt + ` e os coadjuvantes são ${coadjuvants.join(", ")}.`;
+
+        if (protagonists.length === 0 && coadjuvants.length > 0)
+            currentPrompt = currentPrompt + ` Os personagens são ${coadjuvants.join(", ")}.`;
 
         let prompt = currentPrompt || "escreva uma história infantil";
 
