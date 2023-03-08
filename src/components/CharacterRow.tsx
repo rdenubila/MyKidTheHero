@@ -50,6 +50,8 @@ function CharacterRow({ character, index, onRemove, onChange }: Props) {
                         { value: 'mãe', label: 'Mãe' },
                         { value: 'avô', label: 'Avô' },
                         { value: 'avó', label: 'Avó' },
+                        { value: 'cachorro', label: 'Cachorro' },
+                        { value: 'gato', label: 'Gato' },
                     ]}
                 />
             </div>

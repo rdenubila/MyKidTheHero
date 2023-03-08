@@ -1,4 +1,6 @@
 import { Configuration, OpenAIApi } from "openai";
+import themes from "../data/themes.json";
+import _ from "lodash";
 
 export default class OpenAIService {
     constructor(
@@ -6,28 +8,36 @@ export default class OpenAIService {
         private openai = new OpenAIApi(configuration)
     ) { }
 
-    generatePrompt(chars: Character[], challenge: string, ambience: string, moral: string) {
-        let prompt = "História infantil";
-        prompt += `\nTema: ${ambience}`;
-        prompt += `\nInimigo: ${challenge}`;
-        prompt += "\nProtagonistas: " + chars
+    generatePrompt(chars: Character[], theme: string) {
+
+        const protagonists = chars
             .filter(char => char.isProtagonist)
-            .map(char => `\n- ${char.name}: ${char.category}`)
-        prompt += "\nCoadjuvantes: " + chars
+            .map(char => `${char.name} (${char.category})`);
+        const coadjuvants = chars
             .filter(char => !char.isProtagonist)
-            .map(char => `\n- ${char.name}: ${char.category}`)
-        // prompt += `\nMoral: ${moral}`;
+            .map(char => `${char.name} (${char.category})`);
+
+        const currentTheme = themes.find(item => item.theme === theme);
+        let currentPrompt = _.sample(currentTheme?.prompt);
+
+        currentTheme?.parameters.forEach(param => {
+            currentPrompt = currentPrompt?.replaceAll(`{{${param.key}}}`, _.sample(param.values) || param.key);
+        })
+
+        currentPrompt = currentPrompt?.replaceAll("{{protagonist}}", protagonists.join(", "));
+        currentPrompt = currentPrompt?.replaceAll("{{coadjuvants}}", coadjuvants.join(", "));
+
+        let prompt = currentPrompt || "escreva uma história infantil";
 
         return prompt;
     }
 
-    async generateHistory(chars: Character[], challenge: string, ambience: string, moral: string) {
-        const completion = await this.openai.createCompletion({
-            model: "text-davinci-003",
-            max_tokens: 1000,
-            prompt: this.generatePrompt(chars, challenge, ambience, moral)
+    async generateHistory(chars: Character[], theme: string) {
+        const completion = await this.openai.createChatCompletion({
+            model: "gpt-3.5-turbo",
+            messages: [{ "role": "user", "content": this.generatePrompt(chars, theme) }]
         });
-        return completion.data.choices[0].text;
+        return completion.data.choices[0].message?.content.trim();
     }
 
 }

@@ -1,12 +1,10 @@
 import { Button, Divider } from 'antd';
 import React, { useState } from 'react';
-import AmbienceSelect from '../components/AmbienceSelect';
-import ChallengeSelect from '../components/ChallengeSelect';
 import CharacterRow from '../components/CharacterRow';
-import MoralSelect from '../components/MoralSelect';
+import ThemeSelect from '../components/ThemeSelect';
 
 type Props = {
-  onSubmit: (characters: Character[], challenge: string, ambience: string, moral: string) => void
+  onSubmit: (characters: Character[], theme: string) => void
 }
 
 function PlotForm({ onSubmit }: Props) {
@@ -19,9 +17,7 @@ function PlotForm({ onSubmit }: Props) {
         isProtagonist: true
       }]);
 
-  const [ambience, setAmbience] = useState<string | null>();
-  const [moral, setMoral] = useState<string | null>();
-  const [challenge, setChallenge] = useState<string | null>();
+  const [theme, setTheme] = useState<string | null>();
 
   const addChar = () => {
     const char = [...characters];
@@ -49,9 +45,7 @@ function PlotForm({ onSubmit }: Props) {
 
     onSubmit(
       characters,
-      challenge || "",
-      ambience || "",
-      moral || ""
+      theme || ""
     );
   }
 
@@ -74,12 +68,10 @@ function PlotForm({ onSubmit }: Props) {
         </div>
       </div>
 
-      <Divider>Configurações</Divider>
+      <Divider>Selecione um tema</Divider>
 
-      <div className="my-8 grid grid-cols-3 gap-4">
-        <AmbienceSelect ambience={ambience} onChange={setAmbience} />
-        <ChallengeSelect value={challenge} onChange={setChallenge} />
-        {/* <MoralSelect value={moral} onChange={setMoral} /> */}
+      <div className="my-8 grid grid-cols-1 gap-4">
+        <ThemeSelect value={theme} onChange={setTheme} />
       </div>
 
       <div className="my-8">
