@@ -80,5 +80,21 @@
                 "values": ["voar", "super força", "teletransportar", "velocidade", "ler mentes", "controlar elementos", "telecinese", "controlar mentes", "esticar seu corpo"]
             }
         ]
+    },
+    {
+        "theme": "Dinossauro",
+        "prompt": [
+            "Escreva um história infantil emocionante onde o protagonista é um cientista que constrói uma máquina do tempo e que algo dá errado e vai parar na era das cavernas. Ao chegar naquela era a máquina quebra e o protagonista deverá deverá juntar consertar a máquina enquanto foge de um {{dino}}.",
+
+            "Escreva um história infantil emocionante onde o protagonista vive na era das cavernas e um dia encontra um ovo de {{dino}}. Seus pais ficaram com medo mas o protagonista insistiu muito e deixarão ficar com ele. Quando nasceu era pequeno e fofinho, e quanto mais crescia mais fiel ao protagonista ficava.",
+
+            "Escreva um história infantil emocionante onde o protagonista vive na era das cavernas e um dia encontrar um filhote de {{dino}} e o ajuda e encontrar seus pais, porém nessa jornada encontra vários desafios."
+        ],
+        "parameters": [
+            {
+                "key": "dino",
+                "values": ["tiranossauro rex", "pterodáctilo", "brontossauro", "triceratops", "velociraptor"]
+            }
+        ]
     }
 ]
