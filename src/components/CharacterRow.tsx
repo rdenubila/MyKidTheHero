@@ -33,11 +33,11 @@ function CharacterRow({ character, index, onRemove, onChange }: Props) {
     }
 
     return (<>
-        <div className="flex gap-4 items-center">
-            <div className='flex-1'>
+        <div className="flex flex-col md:flex-row gap-2 items-center my-2 md:my-0">
+            <div className='w-full md:flex-1'>
                 <Input value={character.name} onChange={changeName} placeholder='Nome do(a) personagem' />
             </div>
-            <div className='w-36'>
+            <div className='w-full md:w-36'>
                 <Select
                     value={character.category}
                     onChange={changeCategory}

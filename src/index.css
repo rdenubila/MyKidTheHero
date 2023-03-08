@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #B7EBF0;
+  background-color: #e8eff1;
   @apply my-8
 }
 
@@ -19,4 +19,8 @@ body {
 .ant-layout-content {
   margin: 0 auto;
   max-width: 1024px;
+}
+
+.ant-btn-primary {
+  color: #01546B;
 }

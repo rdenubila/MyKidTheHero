@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <Layout.Content>
+    <Layout.Content className='px-4'>
       <h1 className="title">Gerador de histórias</h1>
       {
         history
