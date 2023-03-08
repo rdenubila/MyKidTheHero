@@ -46,8 +46,9 @@
 
             "Escreva um história infantil emocionante sobre ninjas. O protagonista é um ninja que recebe a importante missão de {{mission}}. O desafio final será derrotar o {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
 
-            "Escreva um história infantil emocionante sobre um grupo de ninjas, do qual o protagonista faz parte, que deverá enfrentar vários desafios e testes para provar que são dignos o suficiente e no fim derrotar o grande {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante sobre um grupo de ninjas, do qual o protagonista faz parte, que deverá enfrentar vários desafios e testes para provar que são dignos o suficiente e no fim derrotar o grande {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
 
+            "Escreva um história infantil emocionante onde o protagonista da história é um ninja. Um {{enemy}} desconhecido ofece ao protagonista um chá que promete deixá-lo mais forte, porém o chá na verdade o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
         ],
         "parameters": [
             {
@@ -65,7 +66,9 @@
         "prompt": [
             "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói deverá usar sua inteligência e seus superpoderes para salvar sua cidade que está sendo atacada por um {{enemy}}. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
 
-            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói é capturado por um {{enemy}} e deverá usar sua inteligência e seus super poderes para se livrar do perigo e salvar o mundo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
+            "Escreva um história infantil emocionante onde o protagonista é um super-herói que tem o super poder de {{power}}. O herói é capturado por um {{enemy}} e deverá usar sua inteligência e seus super poderes para se livrar do perigo e salvar o mundo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}",
+
+            "Escreva um história infantil emocionante onde o protagonista é um super-herói. Um {{enemy}} desconhecido ofece ao protagonista uma poção que promete deixá-lo mais forte, porém a poção na verdade é um veneno que o deixa mais fraco e o inimigo irá aproveitar disso para atacar sua cidade. O protagonista deverá reunir todas sua força e inteligência para vencer o inimigo. O protagonista é {{protagonist}} e os coadjuvantes são {{coadjuvants}}"
         ],
         "parameters": [
             {
