@@ -1,0 +1,24 @@
+[
+    {
+        "theme": "Detetive",
+        "prompt": [
+            "Escreva uma história infantil interativa sobre detetives, onde o protagonista é um famoso detetive que deverá solucionar o caso de um roubo de {{item}}. Escreva a primeira parte da história falando sobre o cotidiano dos protagonistas e finalize essa parte com duas opções curtas (1 e 2) para seguir a história.",
+
+            "Na próxima parte os protagonistas sentem medo e tentam fugir desse desafio. Um {{mentor}} aparece e resolve ajudar os protagonistas. Finalize essa parte com duas opções curtas (1 e 2) para seguir a história",
+
+            "Continue a história trazendo um grande desafio para os protagonistas. Finalize essa parte com duas opções curtas (1 e 2) para seguir a história",
+
+            "Finalizar a história com um aprendizado"
+        ],
+        "parameters": [
+            {
+                "key": "item",
+                "values": ["uma joia valiosa", "uma coroa", "um banco", "um relógio", "obras de arte", "de uma escultura famosa", "de um monumento"]
+            },
+            {
+                "key": "mentor",
+                "values": ["policial"]
+            }
+        ]
+    }
+]

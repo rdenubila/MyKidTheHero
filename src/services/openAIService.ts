@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from "openai";
+import { ChatCompletionRequestMessage, Configuration, OpenAIApi } from "openai";
 import themes from "../data/themes.json";
 import _ from "lodash";
 
@@ -42,6 +42,36 @@ export default class OpenAIService {
         const completion = await this.openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             messages: [{ "role": "user", "content": this.generatePrompt(chars, theme) }]
+        });
+        return completion.data.choices[0].message?.content.trim();
+    }
+
+    charInfo(chars: Character[]) {
+        const protagonists = chars
+            .filter(char => char.isProtagonist)
+            .map(char => `${char.name} (${char.category})`);
+        const coadjuvants = chars
+            .filter(char => !char.isProtagonist)
+            .map(char => `${char.name} (${char.category})`);
+
+        let currentPrompt = "";
+        if (protagonists.length > 0)
+            currentPrompt = currentPrompt + ` O protagonista é ${protagonists.join(", ")}.`;
+
+        if (protagonists.length > 0 && coadjuvants.length > 0)
+            currentPrompt = currentPrompt + ` e os coadjuvantes são ${coadjuvants.join(", ")}.`;
+
+        if (protagonists.length === 0 && coadjuvants.length > 0)
+            currentPrompt = currentPrompt + ` Os personagens são ${coadjuvants.join(", ")}.`;
+
+        return currentPrompt;
+    }
+
+    async generateHistoryByPrompt(prompt: ChatCompletionRequestMessage[]) {
+        const completion = await this.openai.createChatCompletion({
+
+            model: "gpt-3.5-turbo",
+            messages: prompt
         });
         return completion.data.choices[0].message?.content.trim();
     }
